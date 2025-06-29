@@ -13,7 +13,7 @@ const server = http.createServer(app);
 // Khởi tạo Socket.IO và cho phép kết nối từ mọi nơi
 const io = new Server(server, {
   cors: {
-    origin: "https://piconnect-frontend.vercel.app/", // Cho phép mọi nguồn gốc kết nối, tiện cho việc phát triển
+    origin: "https://piconnect-frontend.vercel.app", // Cho phép mọi nguồn gốc kết nối, tiện cho việc phát triển
     methods: ["GET", "POST"]
   }
 });
